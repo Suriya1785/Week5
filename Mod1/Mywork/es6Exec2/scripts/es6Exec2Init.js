@@ -56,6 +56,20 @@ console.log(JSON.stringify(matchCourse));
 matchCourse = data.find(courseSearch);
 console.log(JSON.stringify(matchCourse));
 
+// Use of arrow function
+let people = [
+    { name: "Zachary", age: 29 },
+    { name: "Britrtany", age: 33 },
+    { name: "Natalie", age: 35 },
+    { name: "Dana", age: 60 }
+];
+let person = people.find(p => p.age > 60);
+if (person == null) {
+    console.log("no match");
+} else {
+    console.log(person.name);
+}
+
 // value, index and array works
 function courseSearch(value, index, array) {
     if (selectCourse == value.CourseId) {
