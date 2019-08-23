@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome: https://fontawesome.com/icons?d=gallery&m=free -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Add shortcut Icon-->
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+
+    <!-- custom css-->
+    <link rel="stylesheet" href="css/sites.css" />
+
+    <title>Product Catalog</title>
+</head>
+
+<body>
+    <!-- Start Body -->
+
+    <!-- Navigation to applicable web pages -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info">
+        <a class="navbar-brand" href="index.html"><img class="rounded-circle" src="images/logo.jpg" alt="webLogoMissing">ProductCatalog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+            <ul class="navbar-nav">
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header of the page outlining the logo-->
+    <header>
+        <div class="row">
+            <div class="container col-md-4 offset-md-8">
+                <h1 class="trend-title display-5 font-italic">Product Catalog</h1>
+                <p class="font-italic display-5 font-weight-light"><button class="btn-info" type="button" id="viewCategories" name="viewCategories">View Categories &raquo;</button></p>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Content - Vision of the website-->
+
+    <main>
+        <div class="container offset-md-2">
+            <section class="hidden container container-padded" id="categoryContainer">
+                <div class="dropdown">
+                    <button class="button btn-info dropdown-toggle" id="selectCategory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Select a Category
+                        </button>
+                    <div class="dropdown-menu" id="categoryList" aria-labelledby="selectCategory">
+                    </div>
+                </div>
+            </section>
+            <section class="row hidden contianer" id="productsContainer">
+                <div class="col-md-8" id="productsDiv">
+                    <h3 id="categoryName">&nbsp;</h3>
+                    <ul id="productsList"></ul>
+                </div>
+                <div class="hidden" id="productCard">
+                    <h3>Product Details</h3>
+                    <div class="card" style="width:18rem">
+                        <div class="card-body">
+                            <h4 class="card-title" id="productId">&nbsp;</h4>
+                            <p class="card-text" id="productName">&nbsp;</p>
+                            <p class="card-text" id="unitPriceName">&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p id="errorMsgId"></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <hr />
+
+    <footer class="footer">
+        <!-- Start of footer -->
+        <!-- links to our parental sites-->
+        <div class="row justify-content-center">
+            <h3 class="display-5 font-weight-light">Follow us on parent Sites <span class="font-italic font-weight-bold">Indian Government</span> On social</h3>
+        </div>
+        <!--  links to Parent Sites-->
+
+        <div class="row justify-content-center">
+            <ul class="d-flex flex-row list-unstyled">
+                <li>
+                    <a class="footer-style-facebook" href="https://www.facebook.com/Government-of-India-146431782062573/" target="facebook"><i class="fa fa-facebook-square fa-2x"></i>&nbsp;</a>
+                </li>
+                <li>
+                    <a class="footer-style-twitter" href="https://twitter.com/pmoindia" target="twitter"><i class="fa fa-twitter-square fa-2x"></i>&nbsp;</a>
+                </li>
+                <li>
+                    <a class="footer-style-instagram" href="https://www.instagram.com/mygovindia/?hl=en" target="instagram"><i class="fa fa-instagram fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- End of footer-->
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous"></script>
+    <script async src="https://platform.twitter.com/widgets.js"></script>
+    <!-- Custom JavaScripts (None)-->
+    <script src="scripts/productInit.js"></script>
+</body>
+
+</html>
